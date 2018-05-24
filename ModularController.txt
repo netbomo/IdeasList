@@ -1,0 +1,28 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.4
+Creation-Date: 2018-05-24T03:14:36+02:00
+
+====== ModularController ======
+Created jeudi 24 mai 2018
+
+I want to create a modular controller for everyday uses. To replace a heat/cold control on a frigo, drive a solar tracker...
+
+==== Ingredients : ====
+* a small screen : [[https://www.aliexpress.com/item/0-96-I2C-IIC-Serial-128X64-128-64-White-OLED-LCD-LED-Display-Module-For-Arduino/32831027725.html?spm=2114.search0104.3.112.29a738eeLECmPm&ws_ab_test=searchweb0_0,searchweb201602_1_10152_10151_10065_10344_10068_10342_10343_10340_10341_10696_10084_10083_10618_10305_10304_10307_10306_10302_10059_308_100031_10103_10624_10623_10622_10621_10620_10814_10815,searchweb201603_25,ppcSwitch_5&algo_expid=6feffa8e-f7cf-4593-be30-937dcb5c3c40-16&algo_pvid=6feffa8e-f7cf-4593-be30-937dcb5c3c40&priceBeautifyAB=0|screen]]
+* a keyboard/joystick : [[https://www.aliexpress.com/item/Five-Direction-Navigation-Button-Module-for-MCU-AVR-Game-5D-Rocker-Joystick-Independent-Keyboard-for-Arduino/32844133223.html?spm=2114.search0104.3.22.3de81faeBT44dx&ws_ab_test=searchweb0_0,searchweb201602_1_10152_10151_10065_10344_10068_10342_10343_10340_10341_10696_10084_10083_10618_10305_10304_10307_10306_10302_10059_308_100031_10103_10624_10623_10622_10621_10620_10814_10815,searchweb201603_25,ppcSwitch_5&algo_expid=476c46af-f313-4ba9-9c2e-c967ff1b8900-3&algo_pvid=476c46af-f313-4ba9-9c2e-c967ff1b8900&priceBeautifyAB=0|joystick]]
+* an arm : [[https://www.aliexpress.com/item/1pcs-Stainless-steel-package-Waterproof-DS18b20-temperature-probe-temperature-sensor-18B20-For-Arduino/32611961477.html?spm=2114.search0104.3.50.18686ff6zjAoox&ws_ab_test=searchweb0_0,searchweb201602_1_10152_10151_10065_10344_10068_10342_10343_10340_10341_10696_10084_10083_10618_10305_10304_10307_10306_10302_10059_308_100031_10103_10624_10623_10622_10621_10620_10814_10815,searchweb201603_25,ppcSwitch_5&algo_expid=1ea6764a-fce3-4a0a-b7ce-3b35d41f62f4-7&algo_pvid=1ea6764a-fce3-4a0a-b7ce-3b35d41f62f4&priceBeautifyAB=0|ds18b20]]
+* a leg : [[https://www.aliexpress.com/item/WAVGAT-Four-Channel-4-Route-MOSFET-Button-IRF540-V4-0-MOSFET-Switch-Module-For-Arduino/32833983917.html?spm=2114.search0104.8.34.3a869f77vnpyL8&priceBeautifyAB=0|h-Bridge]]
+* a second arm : [[https://www.aliexpress.com/item/Platinum-resistance-heat-resistance-temperature-probe-PT100-high-precision-temperature-sensors/32668674456.html?spm=2114.search0104.3.22.2aa2154bDcuOkc&ws_ab_test=searchweb0_0,searchweb201602_1_10152_10151_10065_10344_10068_10342_10343_10340_10341_10696_10084_10083_10618_10305_10304_10307_10306_10302_10059_308_100031_10103_10624_10623_10622_10621_10620_10814_10815,searchweb201603_25,ppcSwitch_5&algo_expid=7b11bc7e-1b0f-4ebb-9a5e-923e916d5a96-3&algo_pvid=7b11bc7e-1b0f-4ebb-9a5e-923e916d5a96&priceBeautifyAB=0|PT100]]
+* a second leg : [[https://www.aliexpress.com/item/1pcs-solid-state-relay-SSR-25DA-25A-3-32V-DC-TO-24-380V-AC-SSR/32663806352.html?spm=2114.search0104.3.1.3c9b23ffwRUSZm&ws_ab_test=searchweb0_0,searchweb201602_1_10152_10151_10065_10344_10068_10342_10343_10340_10341_10696_10084_10083_10618_10305_10304_10307_10306_10302_10059_308_100031_10103_10624_10623_10622_10621_10620_10814_10815,searchweb201603_25,ppcSwitch_5&algo_expid=0fa6951b-b603-490c-a835-d7e49cc7f3c4-0&algo_pvid=0fa6951b-b603-490c-a835-d7e49cc7f3c4&priceBeautifyAB=0|Solid State Relay]]
+* a heart : [[https://www.aliexpress.com/item/ShengYang-Mini-USB-CH340-Nano-3-0-ATmega328P-Controller-Board-Compatible-For-Arduino-Nano-CH340-USB/32858764759.html?spm=2114.search0104.3.1.494d500eomB6oP&ws_ab_test=searchweb0_0,searchweb201602_1_10152_10151_10065_10344_10068_10342_10343_10340_10341_10696_10084_10083_10618_10305_10304_10307_10306_10302_10059_308_100031_10103_10624_10623_10622_10621_10620_10814_10815,searchweb201603_25,ppcSwitch_5&algo_expid=8e105e35-e6e9-49f5-8156-214ca1555f87-0&algo_pvid=8e105e35-e6e9-49f5-8156-214ca1555f87&priceBeautifyAB=0|Arduino Nano]]
+* a third arm : [[https://www.aliexpress.com/item/5-kinds-each-10pcs-5506-5516-5528-5537-5539-kit-Light-Dependent-Resistor-LDR-5MM-pack/32445624247.html?spm=2114.search0104.3.8.53fd4e77fN3Rl6&ws_ab_test=searchweb0_0,searchweb201602_1_10152_10151_10065_10344_10068_10342_10343_10340_10341_10696_10084_10083_10618_10305_10304_10307_10306_10302_10059_308_100031_10103_10624_10623_10622_10621_10620_10814_10815,searchweb201603_25,ppcSwitch_5&algo_expid=92c5f3c1-8845-43cf-bd58-5439fa7c3976-1&algo_pvid=92c5f3c1-8845-43cf-bd58-5439fa7c3976&priceBeautifyAB=0|photo resistor]]
+
+==== Recipe : ====
+[ ] Draw a schematic
+[ ] Design a DeskPCB?
+[ ] Develop the firmware
+
+
+
+
+

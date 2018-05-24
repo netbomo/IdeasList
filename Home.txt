@@ -1,0 +1,11 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.4
+Creation-Date: 2018-05-24T03:11:16+02:00
+
+====== Home ======
+Created jeudi 24 mai 2018
+
+This is my IdeasList : I put here informations about Ideas.
+
+===== Electronics : =====
+[[ModularController]] 
